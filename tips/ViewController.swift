@@ -14,12 +14,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
+    let goodFaceImage = UIImage(named: "good_face")
+    let greatFaceImage = UIImage(named: "great_face")
+    let amazingFaceImage = UIImage(named: "amazing_face")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        tipControl.setImage(goodFaceImage, forSegmentAtIndex: 0)
+        tipControl.setImage(greatFaceImage, forSegmentAtIndex: 1)
+        tipControl.setImage(amazingFaceImage, forSegmentAtIndex: 2)
+        
         
     }
 
@@ -48,5 +55,8 @@ class ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
+    
+    // Remove segmented controller borders
+    
+    
 }
-

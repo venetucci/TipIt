@@ -8,17 +8,17 @@
 
 import UIKit
 
-class RatingControl: UIView {
+class RatingControl: UIControl {
     
     // MARK: Properties
     
-    var rating = 0 {
+    var rating = 1 {
         didSet {
             setNeedsLayout()
         }
     }
     var ratingButtons = [UIButton]()
-    var spacing = 35
+    var spacing = 40
     var faces = ["Good", "Great", "Amazing"]
     
     // MARK: Initialization
@@ -74,8 +74,9 @@ class RatingControl: UIView {
     
     // MARK: Button Action
     func ratingButtonTapped(button: UIButton) {
-        print("button pressed")
         rating = ratingButtons.indexOf(button)!
+        
+        sendActionsForControlEvents(UIControlEvents.ValueChanged)
         
         updateButtonSelectionStates()
     }

@@ -72,7 +72,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="60" placeholderIntrinsicHeight="60" translatesAutoresizingMaskIntoConstraints="NO" id="jKq-jj-VBq" customClass="RatingControl" customModule="tips" customModuleProvider="target">
-                                <rect key="frame" x="30" y="254" width="260" height="60"/>
+                                <rect key="frame" x="22" y="216" width="260" height="92"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kkj-jp-h2E"/>

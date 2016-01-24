@@ -18,7 +18,7 @@ class RatingControl: UIControl {
         }
     }
     var ratingButtons = [UIButton]()
-    var spacing = 40
+    var spacing = 0
     var faces = ["Good", "Great", "Amazing"]
     
     // MARK: Initialization

@@ -18,10 +18,8 @@ class RatingControl: UIView {
         }
     }
     var ratingButtons = [UIButton]()
-    var spacing = 5
-//    var faces = ["good", "great", "amazing"]
-    var faces = 3
-    
+    var spacing = 35
+    var faces = ["Good", "Great", "Amazing"]
     
     // MARK: Initialization
     
@@ -42,19 +40,21 @@ class RatingControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        let filledGoodImage = UIImage(named: "filledGood")
-        let emptyGoodImage = UIImage(named: "emptyGood")
-        let filledGreatImage = UIImage(named: "filledGreat")
-        let emptyGreatImage = UIImage(named: "emptyGreat")
-        let filledAmazingImage = UIImage(named: "filledAmazing")
-        let emptyAmazingImage = UIImage(named: "emptyAmazing")
+//        let filledGoodImage = UIImage(named: "filledGood")
+//        let emptyGoodImage = UIImage(named: "emptyGood")
+//        let filledGreatImage = UIImage(named: "filledGreat")
+//        let emptyGreatImage = UIImage(named: "emptyGreat")
+//        let filledAmazingImage = UIImage(named: "filledAmazing")
+//        let emptyAmazingImage = UIImage(named: "emptyAmazing")
         
-        for _ in 0..<faces {
+        for face in faces {
             let button = UIButton()
+            let emptyImage = UIImage(named: "empty\(face)")
+            let filledImage = UIImage(named: "filled\(face)")
             
-            button.setImage(emptyGoodImage, forState: .Normal)
-            button.setImage(filledGoodImage, forState: .Selected)
-            button.setImage(filledGoodImage, forState: [.Highlighted, .Selected])
+            button.setImage(emptyImage, forState: .Normal)
+            button.setImage(filledImage, forState: .Selected)
+            button.setImage(filledImage, forState: [.Highlighted, .Selected])
             
             button.adjustsImageWhenHighlighted = false
             
@@ -67,7 +67,7 @@ class RatingControl: UIView {
     
     override func intrinsicContentSize() -> CGSize {
         let buttonSize = Int(frame.size.height)
-        let width = (buttonSize + spacing) * faces
+        let width = (buttonSize + spacing) * faces.count
         
         return CGSize(width: width, height: buttonSize)
     }

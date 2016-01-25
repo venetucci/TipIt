@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3B53F2621C4DC03B00012B3E /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B53F2621C4DC03B00012B3E /* TipIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53F2651C4DC03B00012B3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B53F2671C4DC03B00012B3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B53F26A1C4DC03B00012B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B53F26C1C4DC03B00012B3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B53F26F1C4DC03B00012B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B53F2711C4DC03B00012B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B53F2761C4DC03B00012B3E /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B53F2761C4DC03B00012B3E /* TipIt.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipIt.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B53F27A1C4DC03B00012B3E /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
 		3B53F27C1C4DC03B00012B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BE14F1A1C5581500015983B /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
@@ -70,8 +70,8 @@
 		3B53F2631C4DC03B00012B3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B53F2621C4DC03B00012B3E /* tips.app */,
-				3B53F2761C4DC03B00012B3E /* tipsTests.xctest */,
+				3B53F2621C4DC03B00012B3E /* TipIt.app */,
+				3B53F2761C4DC03B00012B3E /* TipIt.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B53F2611C4DC03B00012B3E /* tips */ = {
+		3B53F2611C4DC03B00012B3E /* TipIt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B53F27F1C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "tips" */;
+			buildConfigurationList = 3B53F27F1C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "TipIt" */;
 			buildPhases = (
 				3B53F25E1C4DC03B00012B3E /* Sources */,
 				3B53F25F1C4DC03B00012B3E /* Frameworks */,
@@ -114,14 +114,14 @@
 			);
 			dependencies = (
 			);
-			name = tips;
+			name = TipIt;
 			productName = tips;
-			productReference = 3B53F2621C4DC03B00012B3E /* tips.app */;
+			productReference = 3B53F2621C4DC03B00012B3E /* TipIt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B53F2751C4DC03B00012B3E /* tipsTests */ = {
+		3B53F2751C4DC03B00012B3E /* TipItTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B53F2821C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "tipsTests" */;
+			buildConfigurationList = 3B53F2821C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "TipItTests" */;
 			buildPhases = (
 				3B53F2721C4DC03B00012B3E /* Sources */,
 				3B53F2731C4DC03B00012B3E /* Frameworks */,
@@ -132,9 +132,9 @@
 			dependencies = (
 				3B53F2781C4DC03B00012B3E /* PBXTargetDependency */,
 			);
-			name = tipsTests;
+			name = TipItTests;
 			productName = tipsTests;
-			productReference = 3B53F2761C4DC03B00012B3E /* tipsTests.xctest */;
+			productReference = 3B53F2761C4DC03B00012B3E /* TipIt.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3B53F25D1C4DC03B00012B3E /* Build configuration list for PBXProject "tips" */;
+			buildConfigurationList = 3B53F25D1C4DC03B00012B3E /* Build configuration list for PBXProject "TipIt" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,8 +168,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B53F2611C4DC03B00012B3E /* tips */,
-				3B53F2751C4DC03B00012B3E /* tipsTests */,
+				3B53F2611C4DC03B00012B3E /* TipIt */,
+				3B53F2751C4DC03B00012B3E /* TipItTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,7 +218,7 @@
 /* Begin PBXTargetDependency section */
 		3B53F2781C4DC03B00012B3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3B53F2611C4DC03B00012B3E /* tips */;
+			target = 3B53F2611C4DC03B00012B3E /* TipIt */;
 			targetProxy = 3B53F2771C4DC03B00012B3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -333,7 +333,7 @@
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = venetescher.tips;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TipIt;
 			};
 			name = Debug;
 		};
@@ -344,7 +344,7 @@
 				INFOPLIST_FILE = tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = venetescher.tips;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TipIt;
 			};
 			name = Release;
 		};
@@ -355,8 +355,8 @@
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = venetescher.tipsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
+				PRODUCT_NAME = TipIt;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipIt.app/TipIt";
 			};
 			name = Debug;
 		};
@@ -367,15 +367,15 @@
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = venetescher.tipsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
+				PRODUCT_NAME = TipIt;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipIt.app/TipIt";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B53F25D1C4DC03B00012B3E /* Build configuration list for PBXProject "tips" */ = {
+		3B53F25D1C4DC03B00012B3E /* Build configuration list for PBXProject "TipIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B53F27D1C4DC03B00012B3E /* Debug */,
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B53F27F1C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "tips" */ = {
+		3B53F27F1C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "TipIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B53F2801C4DC03B00012B3E /* Debug */,
@@ -393,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B53F2821C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
+		3B53F2821C4DC03B00012B3E /* Build configuration list for PBXNativeTarget "TipItTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B53F2831C4DC03B00012B3E /* Debug */,

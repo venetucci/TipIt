@@ -1,10 +1,13 @@
 # Pre-work - Tip Calculator
 
+
+![App icon](tips/Assets.xcassets/AppIcon.appiconset/icon120.png)
+
 TipIt is a tip calculator application for iOS.
 
 Submitted by: Michelle Venetucci Harvey
 
-Time spent: 5.5 hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
@@ -13,12 +16,14 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] Custom font
-* [x] UI animations
+* [x] UI animations (Animate with Duration)
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder
-    * Note: I opted to still require a tap when the app loads, but see additional optional below for first responder implementation.
+    * Note: I opted to still require a tap when the app loads, but see additional feature below for first responder implementation.
 
 The following **additional** features are implemented:
 
+- [x] Custom positioning via translations 
+- [x] Hiding/showing states with alpha
 - [x] Implemented a custom control for tip amounts instead of the segmented controller
 - [x] Added empty and fill image states for custom control ratings
 - [x] Implemented first responder interaction where user can tap anywhere to begin, which focuses the keyboard. After initial tap, user has to tap billField to bring up the keyboard.
@@ -35,7 +40,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It took a while to figure out how to animate the first time someone taps the number pad (not when the number pad first shows). I tried all the IBActions before realizing that it's not an IBAction. I had make my UIViewController the delegate for the text field so I could use shouldChangeCharactersInRange.
+
+For the Custom Control, I adapted the custom control from the [Apple Foodtracker tutorial](https://developer.apple.com/library/ios/referencelibrary/GettingStarted/DevelopiOSAppsSwift/Lesson5.html#//apple_ref/doc/uid/TP40015214-CH19-SW1). The basics were the same, but some of the functinality was different - I created an array for the three ratings images and then hooked that up to the tip and total text inputs. 
 
 ## License
 

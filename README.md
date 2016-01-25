@@ -46,7 +46,7 @@ For the Custom Control, I adapted the custom control from the [Apple Foodtracker
 
 ## License
 
-    Copyright 2015 Michelle Venetucci Harvey
+    Copyright 2016 Michelle Venetucci Harvey
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
